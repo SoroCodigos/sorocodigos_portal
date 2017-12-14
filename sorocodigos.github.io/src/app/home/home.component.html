@@ -8,8 +8,8 @@
       </div>
       <!-- /.col-lg-8 -->
       <div class="col-lg-4">
-        <h1>1° Meetup Xamarin Sorocaba</h1>
-        <p>No dia 25/11/2017 aconteceu o primeiro meetup da comunidade Xamarin Sorocaba com apoio da SoroCódigos.</p>
+        <h1>{{ news[0].titulo }}</h1>
+        <p>{{ news[0].texto }}</p>
         <a class="btn btn-primary btn-lg" href="#">Saiba mais!</a>
       </div>
       <!-- /.col-md-4 -->
@@ -29,20 +29,8 @@
       <div class="col-md-4 mb-4">
         <div class="card h-100">
           <div class="card-body">
-            <h2 class="card-title">{{ news[0].titulo }}</h2>
-            <p class="card-text">{{ news[0].texto }}</p>
-          </div>
-          <div class="card-footer">
-            <a href="#" class="btn btn-primary">Saiba mais!</a>
-          </div>
-        </div>
-      </div>
-      <!-- /.col-md-4 -->
-      <div class="col-md-4 mb-4">
-        <div class="card h-100">
-          <div class="card-body">
-              <h2 class="card-title">{{ news[1].titulo }}</h2>
-              <p class="card-text">{{ news[1].texto }}</p>
+            <h2 class="card-title">{{ news[1].titulo }}</h2>
+            <p class="card-text">{{ news[1].texto }}</p>
           </div>
           <div class="card-footer">
             <a href="#" class="btn btn-primary">Saiba mais!</a>
@@ -55,6 +43,18 @@
           <div class="card-body">
               <h2 class="card-title">{{ news[2].titulo }}</h2>
               <p class="card-text">{{ news[2].texto }}</p>
+          </div>
+          <div class="card-footer">
+            <a href="#" class="btn btn-primary">Saiba mais!</a>
+          </div>
+        </div>
+      </div>
+      <!-- /.col-md-4 -->
+      <div class="col-md-4 mb-4">
+        <div class="card h-100">
+          <div class="card-body">
+              <h2 class="card-title">{{ news[3].titulo }}</h2>
+              <p class="card-text">{{ news[3].texto }}</p>
           </div>
           <div class="card-footer">
             <a href="#" class="btn btn-primary">Saiba mais!</a>

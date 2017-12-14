@@ -8,6 +8,8 @@ import { AboutComponent } from './about/about.component';
 import { HomeComponent } from './home/home.component';
 import { ContactComponent } from './contact/contact.component';
 import { NewsMock } from '../app/mock/Mock_News';
+import { NewsComponent } from './news/news.component';
+import { NewComponent } from './new/new.component';
 
 @NgModule({
   declarations: [
@@ -15,7 +17,9 @@ import { NewsMock } from '../app/mock/Mock_News';
     NavMenuComponent,
     AboutComponent,
     HomeComponent,
-    ContactComponent
+    ContactComponent,
+    NewsComponent,
+    NewComponent
   ],
   imports: [
     BrowserModule,
@@ -23,6 +27,7 @@ import { NewsMock } from '../app/mock/Mock_News';
       { path: '', redirectTo: 'app-home', pathMatch: 'full' },
       { path: 'app-home', component: HomeComponent },
       { path: 'app-about', component: AboutComponent },
+      { path: 'app-contact', component: ContactComponent },
       // { path: 'fetch-data', component: FetchDataComponent },
       // { path: 'podcast-list', component: PodcastListComponent },
       { path: '**', redirectTo: 'app-root' }
